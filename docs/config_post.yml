@@ -1,0 +1,22 @@
+tags:
+  - name: Test API Swagger
+get:
+  description: None
+responses:
+  "200":
+    description: Succesful response
+  "400":
+    description: Bad Request
+  "500":
+    description: Internal Server Error
+parameters:
+  - name: body
+    in: body
+    schema:
+      in: text_remove
+      required:
+        - text
+      properties:
+        text:
+          type: text
+          description: input your text
